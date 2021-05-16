@@ -13,7 +13,7 @@
 		0E4E17AC264E9FC30091798D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E4E17AA264E9FC30091798D /* Main.storyboard */; };
 		0E4E17AE264E9FC60091798D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E4E17AD264E9FC60091798D /* Assets.xcassets */; };
 		0E4E17B1264E9FC60091798D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E4E17AF264E9FC60091798D /* LaunchScreen.storyboard */; };
-		0E4E17BD264ECCD50091798D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4E17BC264ECCD50091798D /* Model.swift */; };
+		0E4E17BD264ECCD50091798D /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4E17BC264ECCD50091798D /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		0E4E17AD264E9FC60091798D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E4E17B0264E9FC60091798D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E4E17B2264E9FC60091798D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0E4E17BC264ECCD50091798D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		0E4E17BC264ECCD50091798D /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +97,7 @@
 		0E4E17BF264ECCE40091798D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0E4E17BC264ECCD50091798D /* Model.swift */,
+				0E4E17BC264ECCD50091798D /* Question.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -175,7 +175,7 @@
 				0E4E17A9264E9FC30091798D /* ViewController.swift in Sources */,
 				0E4E17A5264E9FC30091798D /* AppDelegate.swift in Sources */,
 				0E4E17A7264E9FC30091798D /* SceneDelegate.swift in Sources */,
-				0E4E17BD264ECCD50091798D /* Model.swift in Sources */,
+				0E4E17BD264ECCD50091798D /* Question.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
