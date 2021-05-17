@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Introduction View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PersonalQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="IntroductionViewController" customModule="PersonalQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -265,13 +265,13 @@
         <!--Результаты -->
         <scene sceneID="Ug7-zr-RQZ">
             <objects>
-                <viewController id="YaV-SE-mQI" sceneMemberID="viewController">
+                <viewController id="YaV-SE-mQI" customClass="IntroductionViewController" customModule="PersonalQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="01K-hM-aum">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="54" translatesAutoresizingMaskIntoConstraints="NO" id="cpK-wb-OCc">
-                                <rect key="frame" x="16" y="217" width="288" height="134.5"/>
+                                <rect key="frame" x="16" y="196.5" width="288" height="175"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы - 🐶" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfQ-QP-VmY">
                                         <rect key="frame" x="64" y="0.0" width="160.5" height="60"/>
@@ -280,7 +280,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Текст описания Текст описания Текст описания Текст описания Текст описания Текст описания " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmF-WY-3no">
-                                        <rect key="frame" x="15.5" y="114" width="257.5" height="20.5"/>
+                                        <rect key="frame" x="15.5" y="114" width="257.5" height="61"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -297,10 +297,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Результаты " id="CMQ-Yd-vH6">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="C2a-Wz-Pt5"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="C2a-Wz-Pt5">
+                            <connections>
+                                <segue destination="GSD-4v-Gbu" kind="unwind" unwindAction="unwindWithSegue:" id="ypp-zN-DZY"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="25g-T8-YCM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="GSD-4v-Gbu" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2445" y="115"/>
         </scene>

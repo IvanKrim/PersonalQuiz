@@ -7,15 +7,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class IntroductionViewController: UIViewController {
 
-    let question = Question.getQuestion()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
       
     }
 
+    @IBAction func unwind(segue: UIStoryboardSegue) {}
 
 }
 

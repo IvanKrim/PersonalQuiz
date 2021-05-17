@@ -43,7 +43,7 @@ struct Question {
                     Answer(title: "Не замечаю", type: .turtle),
                     Answer(title: "Обожаю", type: .dog)
                 ]
-            ),
+            )
         ]
     }
     
