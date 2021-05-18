@@ -67,10 +67,7 @@ class QuestionViewController: UIViewController {
         let index = lrintf(rangedSlider.value) // lrint - округление
         answersChoosen.append(currentAnswers[index])
         nextQuestion()
-        
     }
-    
-    
 }
 // MARK: - Private Methods
 extension QuestionViewController {
