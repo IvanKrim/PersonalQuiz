@@ -309,7 +309,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="54" translatesAutoresizingMaskIntoConstraints="NO" id="cpK-wb-OCc">
-                                <rect key="frame" x="16" y="196.5" width="288" height="175"/>
+                                <rect key="frame" x="16" y="217" width="288" height="134.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы - 🐶" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfQ-QP-VmY">
                                         <rect key="frame" x="64" y="0.0" width="160.5" height="60"/>
@@ -318,7 +318,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Текст описания Текст описания Текст описания Текст описания Текст описания Текст описания " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmF-WY-3no">
-                                        <rect key="frame" x="15.5" y="114" width="257.5" height="61"/>
+                                        <rect key="frame" x="15.5" y="114" width="257.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -341,6 +341,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="descriptionTextLabel" destination="tmF-WY-3no" id="eF8-Ex-iBv"/>
+                        <outlet property="resultEmojiLabel" destination="mfQ-QP-VmY" id="pOb-pQ-Xki"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="25g-T8-YCM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="GSD-4v-Gbu" userLabel="Exit" sceneMemberID="exit"/>

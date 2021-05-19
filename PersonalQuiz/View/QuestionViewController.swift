@@ -43,6 +43,11 @@ class QuestionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let resultVC = segue.destination as? ResultViewController else { return }
+        resultVC.answers = answersChoosen
         
     }
     
@@ -86,7 +91,6 @@ extension QuestionViewController {
         
         // Calculate progress
         let totalProgress = Float(questionIndex) / Float(questions.count)
-        
         // Set progress for progress view
         questionProgressView.setProgress(totalProgress, animated: true)
         
